@@ -359,7 +359,6 @@ ProcessedFrame processFrame(const cv::Mat& frame) {
     cv::Mat gray;
     cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY);
 
-    
     cv::Mat binary;
     cv::threshold(gray, binary, 180.0, 255.0, cv::THRESH_BINARY);
 
