@@ -34,12 +34,12 @@ cmake --build build/hongxihe --parallel
 ```bash
 ./build/hongxihe/marker_recognition \
   data/raw/marker_video.avi \
-  results/hongxihe_marker_result.mp4
+  src/hongxihe/evidence/hongxihe_marker_result.mp4
 ```
 
 程序参数依次为输入视频和输出视频。输出目录不存在时会自动创建。
-结果视频位于 `results/`，该目录已加入 `.gitignore`，不会提交构建产物或
-结果视频。
+提交用的结果视频位于 `src/hongxihe/evidence/`，时长不超过 30 秒。
+运行程序时也可以使用其他本地输出路径；构建目录和临时结果不应提交。
 
 当前处理流程：
 

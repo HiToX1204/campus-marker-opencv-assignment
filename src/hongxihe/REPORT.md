@@ -23,7 +23,7 @@ cmake -S src/hongxihe -B build/hongxihe \
 cmake --build build/hongxihe --parallel
 ./build/hongxihe/marker_recognition \
   data/raw/marker_video.avi \
-  results/hongxihe_marker_result.mp4
+  src/hongxihe/evidence/hongxihe_marker_result.mp4
 ```
 
 ## 方法概述
@@ -80,4 +80,4 @@ cmake --build build/hongxihe --parallel
 - 地面灯光反射可能生成白色候选区域，通常会被 L 形模板和四角几何
  约束排除，但当反射形状接近目标时仍存在误检风险。
 
-最终结果视频为 `results/hongxihe_marker_result.mp4`，用于连续帧验收。
+最终结果视频为 `src/hongxihe/evidence/hongxihe_marker_result.mp4`，用于连续帧验收。
